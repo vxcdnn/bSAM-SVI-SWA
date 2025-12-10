@@ -1,0 +1,151 @@
+randomseed=0
+alpha=0.5
+rho=0.05
+optim=bsam
+beta1=0.9
+beta2=0.999
+priorprec=40.0
+dafactor=1.0
+batchsize=128
+testbatchsize=128
+epochs=100
+warmup=5
+dataset=cifar10
+batchsplit=8
+augment=True
+model=resnet18
+datasetfolder=datasets
+resultsfolder=results
+custominit=1.0
+damping=0.1
+[100/100] Trainloss: 1.128 | Acc: 86.570 
+
+
+(bsam-env) ubuntu@bsam:~/bsam-update/orig$ python train.py
+information of this training run
+  > randomseed=0
+  > alpha=0.5
+  > rho=0.05
+  > optim=bsam
+  > beta1=0.9
+  > beta2=0.999
+  > priorprec=40.0
+  > dafactor=1.0
+  > batchsize=128
+  > testbatchsize=128
+  > epochs=100
+  > warmup=5
+  > dataset=cifar10
+  > batchsplit=8
+  > augment=True
+  > model=resnet18
+  > datasetfolder=datasets
+  > resultsfolder=results
+  > custominit=1.0
+  > damping=0.1
+  > results are saved in results/cifar10_resnet18/bsam/run_5.
+  > dataset=cifar10 (ntrain=50000, ntest=10000, nclasses=10)
+  > datashape (minibatch)  (128, 32, 32, 3)
+  > model='resnet18' (11173962 parameters)
+[  0/100] Trainloss (at samples): 2.347 | Acc: 32.370                                                                            
+[  1/100] Trainloss (at samples): 1.987 | Acc: 42.120                                                                            
+[  2/100] Trainloss (at samples): 1.804 | Acc: 50.780                                                                            
+[  3/100] Trainloss (at samples): 1.603 | Acc: 58.670                                                                            
+[  4/100] Trainloss (at samples): 1.481 | Acc: 56.910                                                                            
+[  5/100] Trainloss (at samples): 1.411 | Acc: 64.570                                                                            
+[  6/100] Trainloss (at samples): 1.389 | Acc: 64.550                                                                            
+[  7/100] Trainloss (at samples): 1.366 | Acc: 66.250                                                                            
+[  8/100] Trainloss (at samples): 1.351 | Acc: 71.920                                                                            
+[  9/100] Trainloss (at samples): 1.351 | Acc: 71.650                                                                            
+[ 10/100] Trainloss (at samples): 1.354 | Acc: 73.220                                                                            
+[ 11/100] Trainloss (at samples): 1.359 | Acc: 73.390                                                                            
+[ 12/100] Trainloss (at samples): 1.363 | Acc: 74.040                                                                            
+[ 13/100] Trainloss (at samples): 1.360 | Acc: 69.750                                                                            
+[ 14/100] Trainloss (at samples): 1.378 | Acc: 68.580                                                                            
+[ 15/100] Trainloss (at samples): 1.369 | Acc: 72.360                                                                            
+[ 16/100] Trainloss (at samples): 1.365 | Acc: 70.350                                                                            
+[ 17/100] Trainloss (at samples): 1.364 | Acc: 69.650                                                                            
+[ 18/100] Trainloss (at samples): 1.360 | Acc: 74.820                                                                            
+[ 19/100] Trainloss (at samples): 1.361 | Acc: 76.460                                                                            
+[ 20/100] Trainloss (at samples): 1.363 | Acc: 71.200                                                                            
+[ 21/100] Trainloss (at samples): 1.365 | Acc: 71.280                                                                            
+[ 22/100] Trainloss (at samples): 1.357 | Acc: 76.010                                                                            
+[ 23/100] Trainloss (at samples): 1.359 | Acc: 73.880                                                                            
+[ 24/100] Trainloss (at samples): 1.352 | Acc: 63.340                                                                            
+[ 25/100] Trainloss (at samples): 1.347 | Acc: 74.760                                                                            
+[ 26/100] Trainloss (at samples): 1.345 | Acc: 74.050                                                                            
+[ 27/100] Trainloss (at samples): 1.341 | Acc: 73.260                                                                            
+[ 28/100] Trainloss (at samples): 1.346 | Acc: 71.230                                                                            
+[ 29/100] Trainloss (at samples): 1.338 | Acc: 74.500                                                                            
+[ 30/100] Trainloss (at samples): 1.336 | Acc: 71.880                                                                            
+[ 31/100] Trainloss (at samples): 1.342 | Acc: 72.140                                                                            
+[ 32/100] Trainloss (at samples): 1.322 | Acc: 77.010                                                                            
+[ 33/100] Trainloss (at samples): 1.330 | Acc: 75.110                                                                            
+[ 34/100] Trainloss (at samples): 1.323 | Acc: 72.200                                                                            
+[ 35/100] Trainloss (at samples): 1.322 | Acc: 71.550                                                                            
+[ 36/100] Trainloss (at samples): 1.326 | Acc: 74.190                                                                            
+[ 37/100] Trainloss (at samples): 1.312 | Acc: 75.700                                                                            
+[ 38/100] Trainloss (at samples): 1.316 | Acc: 73.950                                                                            
+[ 39/100] Trainloss (at samples): 1.305 | Acc: 73.580                                                                            
+[ 40/100] Trainloss (at samples): 1.310 | Acc: 73.880                                                                            
+[ 41/100] Trainloss (at samples): 1.305 | Acc: 75.880                                                                            
+[ 42/100] Trainloss (at samples): 1.298 | Acc: 78.580                                                                            
+[ 43/100] Trainloss (at samples): 1.293 | Acc: 75.000                                                                            
+[ 44/100] Trainloss (at samples): 1.299 | Acc: 77.990                                                                            
+[ 45/100] Trainloss (at samples): 1.295 | Acc: 74.310                                                                            
+[ 46/100] Trainloss (at samples): 1.292 | Acc: 75.560                                                                            
+[ 47/100] Trainloss (at samples): 1.288 | Acc: 75.190                                                                            
+[ 48/100] Trainloss (at samples): 1.290 | Acc: 72.590                                                                            
+[ 49/100] Trainloss (at samples): 1.279 | Acc: 78.090                                                                            
+[ 50/100] Trainloss (at samples): 1.268 | Acc: 78.300                                                                            
+[ 51/100] Trainloss (at samples): 1.276 | Acc: 78.740                                                                            
+[ 52/100] Trainloss (at samples): 1.275 | Acc: 78.720                                                                            
+[ 53/100] Trainloss (at samples): 1.263 | Acc: 77.790                                                                            
+[ 54/100] Trainloss (at samples): 1.259 | Acc: 79.480                                                                            
+[ 55/100] Trainloss (at samples): 1.261 | Acc: 78.950                                                                            
+[ 56/100] Trainloss (at samples): 1.250 | Acc: 79.320                                                                            
+[ 57/100] Trainloss (at samples): 1.250 | Acc: 78.970                                                                            
+[ 58/100] Trainloss (at samples): 1.246 | Acc: 80.190                                                                            
+[ 59/100] Trainloss (at samples): 1.244 | Acc: 79.700                                                                            
+[ 60/100] Trainloss (at samples): 1.235 | Acc: 80.510                                                                            
+[ 61/100] Trainloss (at samples): 1.237 | Acc: 80.580                                                                            
+[ 62/100] Trainloss (at samples): 1.231 | Acc: 80.500                                                                            
+[ 63/100] Trainloss (at samples): 1.227 | Acc: 81.910                                                                            
+[ 64/100] Trainloss (at samples): 1.227 | Acc: 79.090                                                                            
+[ 65/100] Trainloss (at samples): 1.220 | Acc: 82.000                                                                            
+[ 66/100] Trainloss (at samples): 1.216 | Acc: 81.740                                                                            
+[ 67/100] Trainloss (at samples): 1.217 | Acc: 80.740                                                                            
+[ 68/100] Trainloss (at samples): 1.208 | Acc: 83.370                                                                            
+[ 69/100] Trainloss (at samples): 1.202 | Acc: 81.030                                                                            
+[ 70/100] Trainloss (at samples): 1.204 | Acc: 83.670                                                                            
+[ 71/100] Trainloss (at samples): 1.195 | Acc: 82.810                                                                            
+[ 72/100] Trainloss (at samples): 1.194 | Acc: 83.820                                                                            
+[ 73/100] Trainloss (at samples): 1.192 | Acc: 83.230                                                                            
+[ 74/100] Trainloss (at samples): 1.189 | Acc: 82.270                                                                            
+[ 75/100] Trainloss (at samples): 1.183 | Acc: 83.870                                                                            
+[ 76/100] Trainloss (at samples): 1.186 | Acc: 83.340                                                                            
+[ 77/100] Trainloss (at samples): 1.173 | Acc: 84.420                                                                            
+[ 78/100] Trainloss (at samples): 1.175 | Acc: 84.750                                                                            
+[ 79/100] Trainloss (at samples): 1.167 | Acc: 84.860                                                                            
+[ 80/100] Trainloss (at samples): 1.166 | Acc: 84.170                                                                            
+[ 81/100] Trainloss (at samples): 1.169 | Acc: 85.690                                                                            
+[ 82/100] Trainloss (at samples): 1.166 | Acc: 85.910                                                                            
+[ 83/100] Trainloss (at samples): 1.157 | Acc: 85.040                                                                            
+[ 84/100] Trainloss (at samples): 1.153 | Acc: 84.960                                                                            
+[ 85/100] Trainloss (at samples): 1.154 | Acc: 85.330                                                                            
+[ 86/100] Trainloss (at samples): 1.149 | Acc: 85.840                                                                            
+[ 87/100] Trainloss (at samples): 1.149 | Acc: 85.860                                                                            
+[ 88/100] Trainloss (at samples): 1.153 | Acc: 85.560                                                                            
+[ 89/100] Trainloss (at samples): 1.144 | Acc: 86.580                                                                            
+[ 90/100] Trainloss (at samples): 1.140 | Acc: 86.380                                                                            
+[ 91/100] Trainloss (at samples): 1.139 | Acc: 86.250                                                                            
+[ 92/100] Trainloss (at samples): 1.135 | Acc: 86.490                                                                            
+[ 93/100] Trainloss (at samples): 1.137 | Acc: 86.520                                                                            
+[ 94/100] Trainloss (at samples): 1.132 | Acc: 86.160                                                                            
+[ 95/100] Trainloss (at samples): 1.133 | Acc: 86.540                                                                            
+[ 96/100] Trainloss (at samples): 1.134 | Acc: 86.340                                                                            
+[ 97/100] Trainloss (at samples): 1.126 | Acc: 86.590                                                                            
+[ 98/100] Trainloss (at samples): 1.130 | Acc: 86.550                                                                            
+[ 99/100] Trainloss (at samples): 1.130 | Acc: 86.750                                                                            
+[100/100] Trainloss (at samples): 1.128 | Acc: 86.570                                                                            
+100%|██████████| 101/101 [1:01:22<00:00, 36.46s/it]       
