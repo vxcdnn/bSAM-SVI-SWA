@@ -21,4 +21,4 @@ python train.py --alpha 0.5 --beta1 0.9 --beta2 0.999 --priorprec 40 --rho 0.05 
 
 python test.py --resultsfolder results/cifar10_resnet18/bsam/run_# --testmc 32
 
-
+Also there is Torch implementation of original SAM in the following files: "Example_of_use_torch_optim.ipynb", "optim_sam.py", "torch_optim.py".
