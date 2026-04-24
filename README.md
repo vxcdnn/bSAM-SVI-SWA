@@ -11,10 +11,12 @@ Concretely, the optimization maintains both parameter means and a learned precis
 ### Mathematical Formulation of bSAM
 
 The standard SAM objective seeks to minimize the maximum loss in a local $\rho$-neighborhood:
-$$\min_{\theta} \max_{||\epsilon|| \le \rho} l(\theta + \epsilon)$$
+
+$$\min_{\theta} \max_{\|\epsilon\| \le \rho} l(\theta + \epsilon)$$
 
 The bSAM framework connects this to the Bayes objective by replacing the expected negative-loss with its Fenchel biconjugate. This yields a relaxed objective that optimizes the mean $m$ and variance $\sigma^2$ of an isotropic Gaussian posterior:
-$$\mathcal{E}_{\text{relaxed}}(m, \sigma) = \left[ \sup_{\epsilon} l(m + \epsilon) - \frac{1}{2\sigma^2}\|\epsilon\|^2 \right] + \frac{\delta'}{2}\|m\|^2 - \frac{P}{2}\log(\sigma^2 \delta')$$
+
+$$\mathcal{E}_{relaxed}(m, \sigma) = \left[ \sup_{\epsilon} l(m + \epsilon) - \frac{1}{2\sigma^{2}}\|\epsilon\|^{2} \right] + \frac{\delta'}{2}\|m\|^{2} - \frac{P}{2}\log(\sigma^{2} \delta')$$
 
 Here, the hard constraint $\rho$ from standard SAM emerges naturally as a function of the learned variance $\sigma^2$.
 
